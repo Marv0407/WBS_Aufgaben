@@ -48,13 +48,13 @@ public class Order {
         final StringBuilder sb = new StringBuilder();
         sb.append("------| Quittung |------");
         sb.append("\n");
-        sb.append("Kunde: "+kundenName);
+        sb.append("Kunde: ").append(kundenName);
         sb.append("\n");
         for(MenuItem menuItem : orderList){
             sb.append(menuItem.toString());
             sb.append("\n");
         }
-        sb.append("Gesamtpreis: "+getGesamtpreis());
+        sb.append("Gesamtpreis: ").append(getGesamtpreis());
         sb.append("\n");
         sb.append("Vielen Dank für Ihre Bestellung!");
         System.out.println(sb.toString());
